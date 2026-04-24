@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: dockerenjoyerd/demo_app
+  tag: latest
+
+service:
+  type: NodePort
+  protocol: TCP
+  nodePort: 30080
+  port: 8080
+  targetPort: 8080
